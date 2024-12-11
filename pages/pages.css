@@ -1,5 +1,11 @@
 * {
-  width: 200px;
+  width: 300px;
+  background-color: rgb(16, 117, 65);
+}
+
+h2 {
+  color: white;
+  text-align: center;
 }
 
 .countdown {
@@ -7,12 +13,11 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+  color: white;
+  text-align: center;
 }
 
-input {
-  width: 150px;
-}
-
-.submit {
-  width: 150px;
+.countdown span {
+  font-size: 2em;
+  color: rgb(148, 252, 202);
 }

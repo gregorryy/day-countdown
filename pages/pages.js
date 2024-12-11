@@ -16,16 +16,16 @@ function mettreAJourCompteARebours() {
   // Mettre à jour les éléments HTML avec le temps restant calculé
   document.getElementById(
     "jours"
-  ).innerHTML = `<span class="jour">${jours}</span> <span class="day">days</span>`;
+  ).innerHTML = `<span class="jour">${jours}</span> days`;
   document.getElementById(
     "heures"
-  ).innerHTML = `<span class="heure">${heures}</span> <span class="hr">hours</span>`;
+  ).innerHTML = `<span class="heure">${heures}</span> hours`;
   document.getElementById(
     "minutes"
-  ).innerHTML = `<span class="minutes">${minutes}</span> <span class="min">minutes</span>`;
+  ).innerHTML = `<span class="minutes">${minutes}</span> minutes`;
   document.getElementById(
     "secondes"
-  ).innerHTML = `<span class="seconde">${secondes}</span> <span class="sec">seconds</span>`;
+  ).innerHTML = `<span class="seconde">${secondes}</span> seconds`;
 }
 
 // Mettre à jour le compte à rebours toutes les secondes
