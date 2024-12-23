@@ -14,18 +14,45 @@ function mettreAJourCompteARebours() {
   const secondes = Math.floor((diff % (1000 * 60)) / 1000);
 
   // Mettre à jour les éléments HTML avec le temps restant calculé
-  document.getElementById(
-    "jours"
-  ).innerHTML = `<span class="jour">${jours}</span> days`;
-  document.getElementById(
-    "heures"
-  ).innerHTML = `<span class="heure">${heures}</span> hours`;
-  document.getElementById(
-    "minutes"
-  ).innerHTML = `<span class="minutes">${minutes}</span> minutes`;
-  document.getElementById(
-    "secondes"
-  ).innerHTML = `<span class="seconde">${secondes}</span> seconds`;
+  if (jours > 1) {
+    document.getElementById(
+      "jours"
+    ).innerHTML = `<span class="jour">${jours}</span> days`;
+  } else {
+    document.getElementById(
+      "jours"
+    ).innerHTML = `<span class="jour">${jours}</span> day`;
+  }
+
+  if (heures > 1) {
+    document.getElementById(
+      "heures"
+    ).innerHTML = `<span class="heure">${heures}</span> hours`;
+  } else {
+    document.getElementById(
+      "heures"
+    ).innerHTML = `<span class="heure">${jours}</span> hour`;
+  }
+
+  if (minutes > 1) {
+    document.getElementById(
+      "minutes"
+    ).innerHTML = `<span class="minutes">${minutes}</span> minutes`;
+  } else {
+    document.getElementById(
+      "minutes"
+    ).innerHTML = `<span class="minutes">${minutes}</span> minute`;
+  }
+
+  if (secondes > 1) {
+    document.getElementById(
+      "secondes"
+    ).innerHTML = `<span class="seconde">${secondes}</span> seconds`;
+  } else {
+    document.getElementById(
+      "secondes"
+    ).innerHTML = `<span class="seconde">${secondes}</span> second`;
+  }
 }
 
 // Mettre à jour le compte à rebours toutes les secondes
